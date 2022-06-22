@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="css/jquery.bxslider.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <header class="header">
+      <div class="header__container-top">
+         <div class="container">
+            <div class="row header__top">
+               <div class="col-lg-3 header__top-logo">
+                  <h3 class="header__top-title ">
+                     Перевозки
+                  </h3>
+               </div>
+               <div class="col-lg-4 header__top-feedback">
+                  <a href="tel:+73432372660" class="header__top-link">
+                     <span class="header__top-link-icon">
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M14.0577 1.45478L14.0346 1.44033L11.111 0L7.95549 4.20735L9.40727 6.14318C9.36383 6.87323 9.05423 7.56201 8.5371 8.07915C8.01996 8.59628 7.33117 8.90586 6.60112 8.9493L4.66533 7.49752L0.458008 10.653L1.88635 13.5521L1.89837 13.5766L1.91286 13.5997C1.98908 13.7225 2.09547 13.8238 2.2219 13.8938C2.34833 13.9639 2.49059 14.0005 2.63513 14H3.38952C4.84306 14 6.28236 13.7137 7.62525 13.1575C8.96814 12.6012 10.1883 11.7859 11.2161 10.7581C12.2439 9.73029 13.0592 8.51011 13.6155 7.16721C14.1717 5.82432 14.458 4.38501 14.458 2.93148V2.17706C14.4585 2.03251 14.4219 1.89026 14.3519 1.76383C14.2818 1.6374 14.1805 1.53101 14.0577 1.45478ZM13.3776 2.93148C13.3776 8.43895 8.89695 12.9196 3.38952 12.9196H2.7791L1.82342 10.9795L4.66553 8.84794L6.24787 10.0347H6.42792C7.50565 10.0334 8.53889 9.60478 9.30096 8.84272C10.063 8.08065 10.4917 7.0474 10.4929 5.96968V5.78962L9.30619 4.20732L11.4375 1.36538L13.3776 2.32122V2.93148Z"
+                              fill="white" />
+                        </svg>
+                     </span>
+                     +7 (343) 237-26-60
+                  </a>
+                  <a href="mailto:info@uralhimtrans.ru" class="header__top-link">
+                     <span class="header__top-link-icon">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M12.2705 0C12.8507 0 13.4071 0.243131 13.8173 0.675907C14.2275 1.10868 14.458 1.69565 14.458 2.30769V9.69231C14.458 10.3043 14.2275 10.8913 13.8173 11.3241C13.4071 11.7569 12.8507 12 12.2705 12H2.64551C2.06535 12 1.50895 11.7569 1.09871 11.3241C0.688476 10.8913 0.458008 10.3043 0.458008 9.69231V2.30769C0.458008 1.69565 0.688476 1.10868 1.09871 0.675907C1.50895 0.243131 2.06535 0 2.64551 0H12.2705ZM13.583 3.65631L7.68026 7.32092C7.62445 7.35549 7.56207 7.37656 7.49762 7.38263C7.43316 7.38869 7.36823 7.3796 7.30751 7.356L7.23576 7.32092L1.33301 3.65815V9.69231C1.33301 10.0595 1.47129 10.4117 1.71743 10.6714C1.96357 10.931 2.29741 11.0769 2.64551 11.0769H12.2705C12.6186 11.0769 12.9524 10.931 13.1986 10.6714C13.4447 10.4117 13.583 10.0595 13.583 9.69231V3.65631ZM12.2705 0.923077H2.64551C2.29741 0.923077 1.96357 1.06896 1.71743 1.32862C1.47129 1.58829 1.33301 1.94047 1.33301 2.30769V2.58646L7.45801 6.38769L13.583 2.58462V2.30769C13.583 1.94047 13.4447 1.58829 13.1986 1.32862C12.9524 1.06896 12.6186 0.923077 12.2705 0.923077Z"
+                              fill="white" />
+                        </svg>
+                     </span>
+                     info@uralhimtrans.ru
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="header__container-bottom">
+         <div class="container">
+            <div class="row header__bottom">
+               <div class="col-lg-7 header__nav">
+                  <ul class="header__nav-list">
+                     <li class="header__nav-item">
+                        <a href="" class="header__nav-link">
+                           О компании
+                        </a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="" class="header__nav-link">
+                           Транспортные услуги
+                        </a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="" class="header__nav-link">
+                           Автопарк
+                        </a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="" class="header__nav-link">
+                           Документы
+                        </a>
+                     </li>
+                     <li class="header__nav-item">
+                        <a href="" class="header__nav-link">
+                           Контакты
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-2 header__btn-block">
+                  <a href="" class="header__btn">
+                     Оставить заявку
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+
+      <section class="hero">
+         <ul class="bxslider hero__slider-list">
+            <li class="hero__slider-item hero__slider-item-first">
+               <div class="container hero__container">
+                  <div class="row hero__content">
+                     <div class="col-lg-7 hero__content-column">
+                        <p class="hero__descr">
+                           по всей территории РФ и ЕАЭС
+                        </p>
+                        <h1 class="hero__title main__title">
+                           Перевозка всех видов наливных грузов
+                        </h1>
+                        <a href="" class="hero__btn main__btn">
+                           Оставить заявку
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="hero__slider-item hero__slider-item-second">
+               <div class="container hero__container">
+                  <div class="row hero__content">
+                     <div class="col-lg-7 hero__content-column">
+                        <p class="hero__descr">
+                           по всей территории РФ и ЕАЭС
+                        </p>
+                        <h1 class="hero__title main__title">
+                           Перевозка всех видов наливных грузов
+                        </h1>
+                        <a href="" class="hero__btn main__btn">
+                           Оставить заявку
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="hero__slider-item hero__slider-item-third">
+               <div class="container hero__container">
+                  <div class="row hero__content">
+                     <div class="col-lg-7 hero__content-column">
+                        <p class="hero__descr">
+                           по всей территории РФ и ЕАЭС
+                        </p>
+                        <h1 class="hero__title main__title">
+                           Перевозка всех видов наливных грузов
+                        </h1>
+                        <a href="" class="hero__btn main__btn">
+                           Оставить заявку
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </li>
+
+         </ul>
+
+
+      </section>
+
+      <section class="info">
+         <div class="container info__container">
+            <div class="row info-content">
+               <div class="col-lg-3 info__column">
+                  <div class="info__card">
+                     <img src="img/info/info-card-img-1.jpg" alt="" class="info__card-top">
+                     <div class="info__card-body">
+                        <h4 class="info__card-title">
+                           Перевозка нефтепродуктов
+                        </h4>
+                        <div class="info__card-descr">
+                           It is a long established fact that a reader will be distracted by the
+                        </div>
+                     </div>
+                     <a href="" class="info__card-btn secondary__btn">
+                        Подробнее
+
+                        <span class="info__card-arrow">
+                           <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M23.3536 4.35355C23.5488 4.15829 23.5488 3.84171 23.3536 3.64645L20.1716 0.464466C19.9763 0.269204 19.6597 0.269204 19.4645 0.464466C19.2692 0.659728 19.2692 0.976311 19.4645 1.17157L22.2929 4L19.4645 6.82843C19.2692 7.02369 19.2692 7.34027 19.4645 7.53553C19.6597 7.7308 19.9763 7.7308 20.1716 7.53553L23.3536 4.35355ZM0 4.5H23V3.5H0V4.5Z"
+                                 fill="black" />
+                           </svg>
+                        </span>
+                     </a>
+
+
+                  </div>
+               </div>
+               <div class="col-lg-3 info__column">
+                  <div class="info__card">
+                     <img src="img/info/info-card-img-2.jpg" alt="" class="info__card-top">
+                     <div class="info__card-body">
+                        <h4 class="info__card-title">
+                           Перевозка пищевых продуктов
+                        </h4>
+                        <div class="info__card-descr">
+                           It is a long established fact that a reader will be distracted by the
+                        </div>
+                     </div>
+                     <a href="" class="info__card-btn secondary__btn">
+                        Подробнее
+                        <span class="info__card-arrow">
+                           <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M23.3536 4.35355C23.5488 4.15829 23.5488 3.84171 23.3536 3.64645L20.1716 0.464466C19.9763 0.269204 19.6597 0.269204 19.4645 0.464466C19.2692 0.659728 19.2692 0.976311 19.4645 1.17157L22.2929 4L19.4645 6.82843C19.2692 7.02369 19.2692 7.34027 19.4645 7.53553C19.6597 7.7308 19.9763 7.7308 20.1716 7.53553L23.3536 4.35355ZM0 4.5H23V3.5H0V4.5Z"
+                                 fill="black" />
+                           </svg>
+                        </span>
+                     </a>
+
+
+                  </div>
+               </div>
+               <div class="col-lg-3 info__column">
+                  <div class="info__card">
+                     <img src="img/info/info-card-img-3.jpg" alt="" class="info__card-top">
+                     <div class="info__card-body">
+                        <h4 class="info__card-title">
+                           Перевозка химических продуктов
+                        </h4>
+                        <div class="info__card-descr">
+                           It is a long established fact that a reader will be distracted by the
+                        </div>
+                     </div>
+                     <a href="" class="info__card-btn secondary__btn">
+                        Подробнее
+                        <span class="info__card-arrow">
+                           <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M23.3536 4.35355C23.5488 4.15829 23.5488 3.84171 23.3536 3.64645L20.1716 0.464466C19.9763 0.269204 19.6597 0.269204 19.4645 0.464466C19.2692 0.659728 19.2692 0.976311 19.4645 1.17157L22.2929 4L19.4645 6.82843C19.2692 7.02369 19.2692 7.34027 19.4645 7.53553C19.6597 7.7308 19.9763 7.7308 20.1716 7.53553L23.3536 4.35355ZM0 4.5H23V3.5H0V4.5Z"
+                                 fill="black" />
+                           </svg>
+                        </span>
+                     </a>
+
+
+                  </div>
+               </div>
+               <div class="col-lg-3 info__column">
+                  <div class="info__card">
+                     <img src="img/info/info-card-img-4.jpg" alt="" class="info__card-top">
+                     <div class="info__card-body">
+                        <h4 class="info__card-title">
+                           классы опасных грузов
+                        </h4>
+                        <div class="info__card-descr">
+                           It is a long established fact that a reader will be distracted by the
+                        </div>
+                     </div>
+                     <a href="" class="info__card-btn secondary__btn">
+                        Подробнее
+                        <span class="info__card-arrow">
+                           <svg width="24" height="8" viewBox="0 0 24 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M23.3536 4.35355C23.5488 4.15829 23.5488 3.84171 23.3536 3.64645L20.1716 0.464466C19.9763 0.269204 19.6597 0.269204 19.4645 0.464466C19.2692 0.659728 19.2692 0.976311 19.4645 1.17157L22.2929 4L19.4645 6.82843C19.2692 7.02369 19.2692 7.34027 19.4645 7.53553C19.6597 7.7308 19.9763 7.7308 20.1716 7.53553L23.3536 4.35355ZM0 4.5H23V3.5H0V4.5Z"
+                                 fill="black" />
+                           </svg>
+                        </span>
+                     </a>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </section>
+
+      <section class="geography">
+         <div class="container geography__container">
+            <div class="row geography__content-top">
+               <div class="col-lg-6 geography__content-top-column">
+                  <h2 class="geography__title section__title">
+                     география перевозок
+                  </h2>
+                  <p class="geography__descr">
+                     Наша компания осуществляет перевозки грузов по федеральным округам России и странам входящим в ЕАЭС
+                  </p>
+               </div>
+            </div>
+            <div class="row geography__content-bottom">
+               <div class="col-lg-5 geography__content-bottom-column">
+                  <div class="geography__form-block">
+                     <form action="" method="post" class="geography__form">
+                        <h5 class="geography__form-title">
+                           Закажите машину прямо сейчас
+                        </h5>
+                        <input type="text" name="username" placeholder="Ваше имя" class="geography__form-input">
+                        <input type="tel" placeholder="Ваш телефон" class="geography__form-input">
+                        <input type="text" placeholder="Вид груза" class="geography__form-input">
+                        <button class="geography__form-btn main__btn">
+                           Заказать машину
+                        </button>
+                     </form>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      <section class="benefits">
+         <div class="container benefits__container">
+            <h2 class="benefits__title section__title">
+               нАШИ ПРЕИМУЩЕСТВА
+            </h2>
+            <div class="row benefits__content">
+               <div class="col-lg-3 benefits__content-column">
+                  <div class="benefits__card">
+                     <div class="benefits__card--body">
+                        <span class="benefits__card-icon">
+                           <svg width="104" height="104" viewBox="0 0 104 104" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M44.7798 0.407403C39.0315 0.619709 33.3738 1.90709 28.0996 4.20294C27.9534 6.81331 28.0451 10.0282 29.8785 11.3115C34.2233 14.3488 34.4015 17.4558 34.2575 18.7081C34.4162 19.123 34.6976 19.4797 35.0641 19.7308C37.0835 20.7033 39.3887 20.9044 41.546 20.2961C44.3025 19.6316 47.2118 20.2455 49.4648 21.967C51.6175 24.0014 52.8848 26.7999 52.9938 29.7598C52.9961 29.8816 52.9864 30.0035 52.965 30.1235C52.7321 31.4983 53.1482 32.9035 54.0922 33.9298C55.0861 34.7293 57.8138 35.651 64.8918 32.8459C68.9383 31.3581 73.2796 30.8497 77.5604 31.3622C79.5097 31.8473 81.3771 32.6165 83.1024 33.6453C85.7254 35.1764 88.5744 36.2824 91.5433 36.9223C86.9178 14.9929 67.1764 -0.422001 44.7798 0.407414L44.7798 0.407403ZM24.3581 6.03588C20.2261 8.31002 16.4653 11.2014 13.2056 14.61C16.2577 16.0583 19.9302 18.1815 20.9227 21.8122C21.2052 22.8803 21.4335 23.962 21.6069 25.0532C21.9707 27.1624 22.1074 27.9486 23.7459 29.072C24.5803 29.5995 25.4781 30.0194 26.4179 30.3215C29.5574 31.0445 31.9773 33.5476 32.5938 36.7098C33.7892 41.9035 34.6516 45.6567 29.6805 50.3219C26.8456 52.5757 23.3378 53.8155 19.7163 53.8437C18.7369 53.7798 17.5359 54.0265 17.2892 54.4163C17.147 54.6387 17.1361 55.4264 17.9914 56.9695C20.4906 61.4699 26.832 58.8456 27.1021 58.7304C27.1621 58.7044 27.2234 58.6816 27.2858 58.662C27.9322 58.4656 33.6578 56.8119 36.9475 59.555C38.6765 61.1271 39.4391 63.4999 38.9497 65.7849C38.1807 71.4295 34.6816 76.3334 29.5941 78.8964L19.4066 83.7471C24.8891 87.7435 31.1899 90.4739 37.8549 91.7415C40.089 88.7878 41.4108 85.2455 41.6577 81.5504C41.5259 77.1909 44.6012 73.39 48.8922 72.6089C49.9064 72.1892 50.9441 71.8285 52 71.5286V61.2188C52.001 60.6225 52.0982 60.0303 52.288 59.465L55.9719 48.4061C56.7226 46.1463 58.8374 44.6222 61.2187 44.625H92.5156C92.4636 43.311 92.3446 42.016 92.1843 40.7322C88.3766 40.1522 84.7133 38.8557 81.3883 36.9115C79.9844 36.0672 78.4709 35.4202 76.8906 34.9885C73.2816 34.5958 69.6306 35.0394 66.2206 36.2849C59.5027 38.9478 54.6235 39.1171 51.7515 36.7747C49.8209 34.9728 48.9033 32.3347 49.2991 29.7238C49.2103 27.8669 48.4292 26.1106 47.1097 24.8011C45.6741 23.7974 43.8688 23.4785 42.1762 23.9296C37.9791 24.6516 34.7996 24.1971 32.7162 22.5792C31.5236 21.6911 30.7404 20.3586 30.5447 18.8845C30.5281 18.6651 30.55 18.4445 30.6096 18.2327C30.6042 18.2327 30.8635 16.4961 27.7647 14.3292C25.029 12.4146 24.3946 9.07291 24.3581 6.03588ZM10.656 17.4909C-4.97455 36.7456 -2.52114 64.9264 16.2017 81.1903L28.0312 75.5582C31.9714 73.5438 34.6802 69.7327 35.2874 65.3492C35.5626 64.3088 35.3005 63.1998 34.5888 62.3927C33.1304 61.1719 29.6805 61.812 28.4525 62.1658C25.0838 63.5774 18.031 64.6356 14.7684 58.7592C13.3405 56.1828 13.1459 54.0536 14.1851 52.4285C15.7731 49.943 19.4318 50.1311 19.8496 50.1598C22.489 50.1025 25.0442 49.2197 27.1561 47.6355C30.5855 44.418 30.1522 42.5427 28.9999 37.5345C28.4165 34.9901 27.2552 34.5581 25.1431 33.7786C23.9141 33.3756 22.7424 32.8152 21.6573 32.1113C19.4658 30.6836 18.0949 28.2888 17.9734 25.6761C17.8198 24.7025 17.6167 23.7374 17.3648 22.7845C16.7011 20.3537 13.2174 18.656 10.656 17.4909H10.656ZM61.2187 48.3125C60.4259 48.3129 59.7224 48.8206 59.4722 49.5729L56.2024 59.375H72.4973L73.8801 48.3125H61.2187ZM77.5964 48.3125L76.2136 59.375H83.0988L81.716 48.3125H77.5964ZM85.4323 48.3125L86.8151 59.375H103.11L99.8402 49.5729C99.59 48.8206 98.8865 48.3129 98.0937 48.3125H85.4323ZM55.6874 63.0625V101.781C55.6874 102.8 56.5129 103.625 57.5312 103.625H101.781C102.799 103.625 103.625 102.8 103.625 101.781V63.0625H87.0312V72.2812C87.0312 73.2995 86.2057 74.125 85.1874 74.125H74.1249C73.1067 74.125 72.2812 73.2995 72.2812 72.2812V63.0625H55.6874ZM75.9687 63.0625V70.4375H83.3437V63.0625H75.9687ZM51.9999 75.389C50.9097 75.7511 50.2143 76.0552 50.1994 76.0624C50.057 76.1267 49.9069 76.1727 49.7529 76.1992C47.1756 76.6002 45.292 78.8454 45.3452 81.4532C45.2085 85.332 44.0008 89.0974 41.8557 92.332C43.3737 92.4842 44.9102 92.5599 46.4687 92.5625C48.3175 92.5596 50.1646 92.4466 51.9999 92.224V75.389ZM86.9556 92.5625C86.9808 92.562 87.006 92.562 87.0312 92.5625H94.4062C95.4245 92.5625 96.2499 93.388 96.2499 94.4062C96.2499 95.4245 95.4245 96.25 94.4062 96.25H87.0312C86.0129 96.2709 85.1705 95.4623 85.1496 94.4441C85.1287 93.4258 85.9373 92.5834 86.9556 92.5625Z"
+                                 fill="#E8D52B" />
+                           </svg>
+                        </span>
+                        <p class="benefits__card--descr">
+                           Полный комплекс услуг грузоперевозок
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 benefits__content-column">
+                  <div class="benefits__card">
+                     <div class="benefits__card--body">
+                        <span class="benefits__card-icon">
+                           <svg width="121" height="121" viewBox="0 0 121 121" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M103.607 0C94.0749 0.0109414 86.3502 7.73562 86.3393 17.2679C86.3393 27.8183 93.9096 37.9192 98.5735 43.1696H30.2187C21.8741 43.1696 15.1094 49.9343 15.1094 58.279C15.1094 66.6237 21.8741 73.3884 30.2187 73.3884H97.1317C104.284 73.3884 110.083 79.1867 110.083 86.3393C110.083 93.4919 104.284 99.2902 97.1317 99.2902H38.8527V84.1808C38.8527 82.9887 37.8863 82.0223 36.6942 82.0223H25.9018V92.8147C25.9018 94.0068 24.9354 94.9732 23.7433 94.9732H15.1094C13.9173 94.9732 12.9509 94.0068 12.9509 92.8147V82.0223H2.15848C0.966383 82.0223 0 82.9887 0 84.1808V118.717C0 119.909 0.966383 120.875 2.15848 120.875H36.6942C37.8863 120.875 38.8527 119.909 38.8527 118.717V103.607H97.1317C106.668 103.607 114.4 95.8761 114.4 86.3393C114.4 76.8025 106.668 69.0714 97.1317 69.0714H30.2187C24.2583 69.0714 19.4263 64.2395 19.4263 58.279C19.4263 52.3185 24.2583 47.4866 30.2187 47.4866H103.607C103.647 47.4863 103.686 47.4849 103.725 47.4824C103.792 47.4784 103.858 47.4714 103.923 47.4613C103.929 47.4613 103.935 47.4613 103.94 47.4613C104.001 47.4513 104.062 47.4386 104.121 47.4234C104.178 47.4088 104.235 47.3919 104.29 47.3728C104.372 47.3467 104.452 47.3157 104.53 47.28C104.539 47.2759 104.547 47.2717 104.556 47.2674C104.564 47.2632 104.573 47.259 104.581 47.2547C104.636 47.2261 104.689 47.1952 104.741 47.162C104.795 47.1291 104.847 47.094 104.897 47.0566C104.904 47.051 104.911 47.0454 104.918 47.0397C104.971 46.9999 105.021 46.9577 105.07 46.9133C105.076 46.9075 105.129 46.8583 105.137 46.85C106.05 46.0016 120.875 31.998 120.875 17.2679C120.864 7.73562 113.139 0.0109414 103.607 0H103.607ZM103.249 8.64236C105.599 8.54475 107.887 9.40995 109.584 11.038C111.281 12.666 112.241 14.916 112.241 17.2678C112.236 22.0342 108.373 25.8968 103.607 25.9018C98.9174 25.8896 95.0949 22.1359 94.9975 17.4471C94.9002 12.7583 98.5636 8.84921 103.249 8.64235V8.64236ZM103.607 12.9509C101.223 12.9509 99.2902 14.8837 99.2902 17.2679C99.2902 19.652 101.223 21.5848 103.607 21.5848C105.991 21.5848 107.924 19.652 107.924 17.2679C107.924 14.8837 105.991 12.9509 103.607 12.9509ZM17.2679 82.0223V90.6562H21.5848V82.0223H17.2679ZM23.6548 107.924C23.6843 107.923 23.7138 107.923 23.7433 107.924H28.0603C29.2524 107.924 30.2187 108.89 30.2187 110.083C30.2187 111.275 29.2524 112.241 28.0603 112.241H23.7433C22.5512 112.266 21.565 111.319 21.5406 110.127C21.5161 108.935 22.4627 107.949 23.6548 107.924Z"
+                                 fill="#E8D52B" />
+                           </svg>
+                        </span>
+                        <p class="benefits__card--descr">
+                           Развитая сеть транспортных узлов
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 benefits__content-column">
+                  <div class="benefits__card">
+                     <div class="benefits__card--body">
+                        <span class="benefits__card-icon">
+                           <svg width="120" height="89" viewBox="0 0 120 89" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M6 0C2.68625 0 0 2.68625 0 6V74.5C0 78.328 2.47523 79.7245 4.51123 80.228C5.77548 80.5405 6.97909 79.5869 6.9961 78.2846C7.09435 70.7404 13.2812 64.25 21.25 64.25C24.3225 64.25 27.17 65.2272 29.5 66.8847C31.83 65.2272 34.6775 64.25 37.75 64.25C45.7915 64.25 52.0221 70.8613 52.0054 78.4975C52.0029 79.6028 52.8982 80.5 54.0034 80.5H82.5C83.6045 80.5 84.5 79.6045 84.5 78.5V6C84.5 2.68625 81.8138 0 78.5 0H6ZM42.25 19C43.355 19 44.25 19.895 44.25 21V59.5C44.25 60.605 43.355 61.5 42.25 61.5C41.145 61.5 40.25 60.605 40.25 59.5V21C40.25 19.895 41.145 19 42.25 19ZM23.25 23.25C24.355 23.25 25.25 24.145 25.25 25.25V26.25C25.25 27.355 24.355 28.25 23.25 28.25C22.145 28.25 21.25 27.355 21.25 26.25V25.25C21.25 24.145 22.145 23.25 23.25 23.25ZM61.25 23.25C62.355 23.25 63.25 24.145 63.25 25.25V55.25C63.25 56.355 62.355 57.25 61.25 57.25C60.145 57.25 59.25 56.355 59.25 55.25V25.25C59.25 24.145 60.145 23.25 61.25 23.25ZM90.0239 28C89.1822 28 88.5 28.6822 88.5 29.5239V40.9761C88.5 41.8178 89.1822 42.5 90.0239 42.5H112.596C116.541 42.5 119.879 39.413 119.997 35.4697C120.118 31.3722 116.82 28 112.75 28H90.0239ZM23.25 32C24.355 32 25.25 32.895 25.25 34V55.25C25.25 56.355 24.355 57.25 23.25 57.25C22.145 57.25 21.25 56.355 21.25 55.25V34C21.25 32.895 22.145 32 23.25 32ZM114.579 46.3852C114.465 46.3811 114.351 46.3865 114.235 46.4018C113.198 46.5398 113.917 46.5 97.7891 46.5C96.5278 46.5 95.5816 47.6531 95.8276 48.8901L96.8223 53.8901C97.0083 54.8259 97.8294 55.5 98.7837 55.5H116.468C117.87 55.5 118.837 54.0946 118.336 52.7851L116.376 47.666C116.086 46.9058 115.371 46.4142 114.579 46.3852ZM90.0239 46.5C89.1822 46.5 88.5 47.1822 88.5 48.0239V66.9228C88.5 68.2501 90.0863 68.9655 91.0586 68.062C93.6031 65.6975 97.0107 64.25 100.75 64.25C108.294 64.25 114.372 70.1144 114.957 77.3271C115.099 79.0786 117.241 79.8409 118.427 78.5444C119.403 77.4772 120 76.0565 120 74.5V61.5C120 60.3955 119.104 59.5 118 59.5H95.5C94.545 59.5 93.7251 58.8251 93.5376 57.8901L91.5185 47.727C91.376 47.0095 90.7467 46.5 90.0239 46.5L90.0239 46.5ZM21.25 68.25C15.5975 68.25 11 72.8475 11 78.5C11 84.1525 15.5975 88.75 21.25 88.75C24.63 88.75 27.6325 87.1052 29.5 84.5752C31.3675 87.1052 34.37 88.75 37.75 88.75C43.4025 88.75 48 84.1525 48 78.5C48 72.8475 43.4025 68.25 37.75 68.25C34.37 68.25 31.3675 69.8948 29.5 72.4248C27.6325 69.8948 24.63 68.25 21.25 68.25ZM100.75 68.25C95.0891 68.25 90.5 72.8391 90.5 78.5C90.5 84.1609 95.0891 88.75 100.75 88.75C106.411 88.75 111 84.1609 111 78.5C111 72.8391 106.411 68.25 100.75 68.25Z"
+                                 fill="#E8D52B" />
+                           </svg>
+                        </span>
+                        <p class="benefits__card--descr">
+                           Наличие собственного автопарка
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 benefits__content-column">
+                  <div class="benefits__card">
+                     <div class="benefits__card--body">
+                        <span class="benefits__card-icon">
+                           <svg width="92" height="99" viewBox="0 0 92 99" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M67.2887 0.746948C65.6629 0.746948 63.7463 1.09255 61.128 1.81034C54.5394 3.60924 15.9066 14.6774 15.3333 14.8546C9.60045 17.0877 5.97247 19.2854 3.69643 21.873C6.36607 20.0032 9.54911 18.8246 13.1429 18.8246H74.4762V11.2391C74.4762 7.57037 74.4505 0.746948 67.2887 0.746948ZM13.1429 23.3617C4.99702 23.3617 0 31.2928 0 36.9731V85.4637C0 92.491 5.53609 98.2244 12.3214 98.2244H79.6786C86.4639 98.2244 92 92.491 92 85.4637V36.6187C92 29.68 85.7366 23.3617 78.8571 23.3617H13.1429ZM75.5714 55.1217C78.5919 55.1217 81.0476 57.6561 81.0476 60.7931C81.0476 63.9301 78.5919 66.4645 75.5714 66.4645C72.5424 66.4645 70.0952 63.9301 70.0952 60.7931C70.0952 57.6561 72.5424 55.1217 75.5714 55.1217Z"
+                                 fill="#E8D52B" />
+                           </svg>
+                        </span>
+                        <p class="benefits__card--descr">
+                           Материальная ответственность за принятый груз
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="partners">
+         <div class="container partners__container">
+            <h2 class="partners__title section__title">
+               наши партнеры
+            </h2>
+            <div class="row partners__content">
+               <div class="col-lg-3 partners__content-column">
+                  <a href="" class="partners__content-link">
+                     <img src="img/partners/partners-logo-1.png" alt="" class="partners__content-img">
+                  </a>
+               </div>
+               <div class="col-lg-3 partners__content-column">
+                  <a href="" class="partners__content-link">
+                     <img src="img/partners/partners-logo-2.png" alt="" class="partners__content-img">
+                  </a>
+               </div>
+               <div class="col-lg-3 partners__content-column">
+                  <a href="" class="partners__content-link">
+                     <img src="img/partners/partners-logo-3.png" alt="" class="partners__content-img">
+                  </a>
+               </div>
+               <div class="col-lg-3 partners__content-column">
+                  <a href="" class="partners__content-link">
+                     <img src="img/partners/partners-logo-4.png" alt="" class="partners__content-img">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+      <section class="aboutus">
+         <div class="container aboutus__container">
+            <div class="row aboutus__content">
+               <div class="col-lg-5 aboutus__content-left">
+                  <img src="img/aboutus/aboutus-img.png" alt="" class="aboutus__content-left-img">
+               </div>
+               <div class="col-lg-7 aboutus__content-right">
+                  <div class="aboutus__content-text-block">
+                     <p class="aboutus__content-text">
+                        Постоянный количественный рост и сфера нашей активности требуют от нас анализа форм развития.
+                        Равным образом новая модель организационной деятельности требуют определения и уточнения модели
+                        развития. Задача организации, в особенности же сложившаяся структура.
+                     </p>
+                     <br>
+                     <p class="aboutus__content-text">
+                        Таким образом рамки и место обучения кадров позволяет оценить значение системы обучения кадров,
+                        соответствует насущным потребностям. Повседневная практика показывает, что реализация намеченных
+                        плановых заданий требуют от нас анализа систем массового участия.
+                     </p>
+                     <a href="" class="aboutus__btn secondary__btn">
+                        Подробнее о нас
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+      <section class="feedback">
+         <div class="container feedback__container">
+            <div class="row feedback__content-top">
+               <div class="col-lg-6 feedback__content-top-column">
+                  <h2 class="feedback__title section__title">
+                     У вас остались вопросы?
+                  </h2>
+                  <p class="feedback__descr">
+                     Оставьте заявку на консультацию со специалистом!
+                  </p>
+               </div>
+            </div>
+            <div class="row feedback__content-bottom">
+               <div class="col-lg-11 feedback__content-bottom-column">
+                  <div class="feedback__form-block">
+                     <form action="" method="post" class="feedback__form">
+                        <input type="text" name="username" placeholder="Ваше имя" class="feedback__form-input">
+                        <input type="tel" placeholder="Телефон" class="feedback__form-input">
+                        <button class="feedback__form-btn main__btn">
+                           Отправить
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container-top">
+         <div class="container">
+            <div class="row footer__content-top">
+               <div class="col-lg-3 footer__content-top-column">
+                  <h3 class="footer__title">
+                     Перевозки
+                  </h3>
+                  <a href="" class="footer__btn secondary__btn">
+                     Оставить заявку
+                  </a>
+               </div>
+               <div class="col-lg-3 footer__content-top-column">
+                  <ul class="footer__content-nav-list">
+                     <li class="footer__content-nav-item">
+                        <h5 class="footer__content-nav-title">
+                           Меню
+                        </h5>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link">
+                           О компании
+                        </a>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link">
+                           Транспортные услуги
+                        </a>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link">
+                           Автопарк
+                        </a>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link">
+                           Контакты
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 footer__content-top-column">
+                  <ul class="footer__content-nav-list">
+                     <li class="footer__content-nav-item">
+                        <h5 class="footer__content-nav-title">
+                           Контакты
+                        </h5>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link footer__phone-link">
+                           <span class="footer__content-nav-icon">
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M14.0577 1.45478L14.0346 1.44033L11.111 0L7.95549 4.20735L9.40727 6.14318C9.36383 6.87323 9.05423 7.56201 8.5371 8.07915C8.01996 8.59628 7.33117 8.90586 6.60112 8.9493L4.66533 7.49752L0.458008 10.653L1.88635 13.5521L1.89837 13.5766L1.91286 13.5997C1.98908 13.7225 2.09547 13.8238 2.2219 13.8938C2.34833 13.9639 2.49059 14.0005 2.63513 14H3.38952C4.84306 14 6.28236 13.7137 7.62525 13.1575C8.96814 12.6012 10.1883 11.7859 11.2161 10.7581C12.2439 9.73029 13.0592 8.51011 13.6155 7.16721C14.1717 5.82432 14.458 4.38501 14.458 2.93148V2.17706C14.4585 2.03251 14.4219 1.89026 14.3519 1.76383C14.2818 1.6374 14.1805 1.53101 14.0577 1.45478ZM13.3776 2.93148C13.3776 8.43895 8.89695 12.9196 3.38952 12.9196H2.7791L1.82342 10.9795L4.66553 8.84794L6.24787 10.0347H6.42792C7.50565 10.0334 8.53889 9.60478 9.30096 8.84272C10.063 8.08065 10.4917 7.0474 10.4929 5.96968V5.78962L9.30619 4.20732L11.4375 1.36538L13.3776 2.32122V2.93148Z"
+                                    fill="white" />
+                              </svg>
+                           </span>
+                           +7 (343) 237-26-60
+                        </a>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link footer__mail-link">
+                           <span class="footer__content-nav-icon">
+                              <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M12.2705 0C12.8507 0 13.4071 0.243131 13.8173 0.675907C14.2275 1.10868 14.458 1.69565 14.458 2.30769V9.69231C14.458 10.3043 14.2275 10.8913 13.8173 11.3241C13.4071 11.7569 12.8507 12 12.2705 12H2.64551C2.06535 12 1.50895 11.7569 1.09871 11.3241C0.688476 10.8913 0.458008 10.3043 0.458008 9.69231V2.30769C0.458008 1.69565 0.688476 1.10868 1.09871 0.675907C1.50895 0.243131 2.06535 0 2.64551 0H12.2705ZM13.583 3.65631L7.68026 7.32092C7.62445 7.35549 7.56207 7.37656 7.49762 7.38263C7.43316 7.38869 7.36823 7.3796 7.30751 7.356L7.23576 7.32092L1.33301 3.65815V9.69231C1.33301 10.0595 1.47129 10.4117 1.71743 10.6714C1.96357 10.931 2.29741 11.0769 2.64551 11.0769H12.2705C12.6186 11.0769 12.9524 10.931 13.1986 10.6714C13.4447 10.4117 13.583 10.0595 13.583 9.69231V3.65631ZM12.2705 0.923077H2.64551C2.29741 0.923077 1.96357 1.06896 1.71743 1.32862C1.47129 1.58829 1.33301 1.94047 1.33301 2.30769V2.58646L7.45801 6.38769L13.583 2.58462V2.30769C13.583 1.94047 13.4447 1.58829 13.1986 1.32862C12.9524 1.06896 12.6186 0.923077 12.2705 0.923077Z"
+                                    fill="white" />
+                              </svg>
+                           </span>
+                           info@uralhimtrans.ru
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 footer__content-top-column">
+                  <ul class="footer__content-nav-list">
+                     <li class="footer__content-nav-item">
+                        <h5 class="footer__content-nav-title">
+                           Адрес
+                        </h5>
+                     </li>
+                     <li class="footer__content-nav-item">
+                        <a href="" class="footer__content-nav-link">
+                           <span class="footer__content-nav-icon">
+                              <svg width="19" height="25" viewBox="0 0 19 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M16.1864 13.9453C15.3825 15.6019 14.2933 17.2522 13.1796 18.7341C12.123 20.1311 10.9933 21.4694 9.79537 22.743C8.59737 21.4694 7.46767 20.1312 6.41116 18.7341C5.29741 17.2522 4.20821 15.6019 3.40434 13.9453C2.59128 12.2715 2.12491 10.7039 2.12491 9.35925C2.12491 7.29072 2.93305 5.30692 4.37154 3.84426C5.81002 2.38159 7.76103 1.55987 9.79537 1.55987C11.8297 1.55987 13.7807 2.38159 15.2192 3.84426C16.6577 5.30692 17.4658 7.29072 17.4658 9.35925C17.4658 10.7039 16.9979 12.2715 16.1864 13.9453ZM9.79537 24.958C9.79537 24.958 18.9999 16.0885 18.9999 9.35925C18.9999 6.87702 18.0301 4.49646 16.304 2.74126C14.5778 0.98606 12.2366 0 9.79537 0C7.35417 0 5.01296 0.98606 3.28677 2.74126C1.56058 4.49646 0.59082 6.87702 0.59082 9.35925C0.59082 16.0885 9.79537 24.958 9.79537 24.958Z"
+                                    fill="white" />
+                                 <path
+                                    d="M9.79514 12.4791C8.98141 12.4791 8.20101 12.1504 7.62561 11.5653C7.05022 10.9802 6.72696 10.1867 6.72696 9.35931C6.72696 8.5319 7.05022 7.73838 7.62561 7.15331C8.20101 6.56825 8.98141 6.23956 9.79514 6.23956C10.6089 6.23956 11.3893 6.56825 11.9647 7.15331C12.5401 7.73838 12.8633 8.5319 12.8633 9.35931C12.8633 10.1867 12.5401 10.9802 11.9647 11.5653C11.3893 12.1504 10.6089 12.4791 9.79514 12.4791ZM9.79514 14.0389C11.0157 14.0389 12.1863 13.5459 13.0494 12.6683C13.9125 11.7907 14.3974 10.6004 14.3974 9.35931C14.3974 8.1182 13.9125 6.92792 13.0494 6.05032C12.1863 5.17272 11.0157 4.67969 9.79514 4.67969C8.57455 4.67969 7.40394 5.17272 6.54085 6.05032C5.67775 6.92792 5.19287 8.1182 5.19287 9.35931C5.19287 10.6004 5.67775 11.7907 6.54085 12.6683C7.40394 13.5459 8.57455 14.0389 9.79514 14.0389Z"
+                                    fill="white" />
+                              </svg>
+                           </span>
+                           Москва, ул. Богомолова
+                           <br>
+                           д.7 кв.342
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="footer__container-bottom">
+         <div class="container">
+
+            <div class="row footer__content-bottom">
+               <div class="col-lg-1 footer__content-bottom-column">
+                  <ul class="footer__content-bottom-list">
+                     <li class="footer__content-bottom-item">
+                        <a href="" class="footer__content-bottom-link">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M23.5 11.5704C23.5 5.1801 18.3515 0 12.0014 0C5.64848 0.00143732 0.5 5.1801 0.5 11.5719C0.5 17.3456 4.7056 22.1319 10.2019 23V14.9151H7.28415V11.5719H10.2048V9.02062C10.2048 6.12155 11.9224 4.52037 14.5484 4.52037C15.8075 4.52037 17.1226 4.74603 17.1226 4.74603V7.59193H15.6724C14.2451 7.59193 13.7995 8.4845 13.7995 9.40008V11.5704H16.9875L16.4787 14.9136H13.7981V22.9986C19.2944 22.1304 23.5 17.3441 23.5 11.5704Z"
+                                 fill="white" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__content-bottom-item">
+                        <a href="" class="footer__content-bottom-link">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M12.5 1C9.51488 1 9.1395 1.01375 7.96663 1.066C6.79375 1.121 5.99487 1.30525 5.295 1.5775C4.56088 1.85363 3.89593 2.28676 3.34663 2.84663C2.7871 3.39621 2.35402 4.06108 2.0775 4.795C1.80525 5.4935 1.61963 6.29375 1.566 7.4625C1.51375 8.63812 1.5 9.01213 1.5 12.0014C1.5 14.9879 1.51375 15.3619 1.566 16.5347C1.621 17.7063 1.80525 18.5051 2.0775 19.205C2.35938 19.9282 2.73475 20.5415 3.34663 21.1534C3.95713 21.7652 4.57037 22.142 5.29363 22.4225C5.99487 22.6947 6.79238 22.8804 7.96388 22.934C9.13813 22.9862 9.51213 23 12.5 23C15.4879 23 15.8605 22.9862 17.0347 22.934C18.2049 22.879 19.0065 22.6947 19.7064 22.4225C20.44 22.1462 21.1045 21.7131 21.6534 21.1534C22.2652 20.5415 22.6406 19.9282 22.9225 19.205C23.1934 18.5051 23.379 17.7063 23.434 16.5347C23.4862 15.3619 23.5 14.9879 23.5 12C23.5 9.01213 23.4862 8.63813 23.434 7.46388C23.379 6.29375 23.1934 5.4935 22.9225 4.795C22.646 4.06106 22.2129 3.39618 21.6534 2.84663C21.1042 2.28655 20.4392 1.85339 19.705 1.5775C19.0037 1.30525 18.2035 1.11963 17.0334 1.066C15.8591 1.01375 15.4865 1 12.4973 1H12.5014H12.5ZM11.5141 2.98275H12.5014C15.4384 2.98275 15.7863 2.99238 16.9454 3.046C18.0179 3.09413 18.6009 3.27425 18.9886 3.42412C19.5015 3.6235 19.8686 3.86275 20.2536 4.24775C20.6386 4.63275 20.8765 4.9985 21.0759 5.51275C21.2271 5.89913 21.4059 6.48213 21.454 7.55463C21.5076 8.71375 21.5186 9.06163 21.5186 11.9973C21.5186 14.9329 21.5076 15.2821 21.454 16.4412C21.4059 17.5138 21.2257 18.0954 21.0759 18.4831C20.8995 18.9607 20.618 19.3926 20.2522 19.7467C19.8672 20.1318 19.5015 20.3696 18.9873 20.569C18.6023 20.7203 18.0192 20.899 16.9454 20.9485C15.7863 21.0007 15.4384 21.0131 12.5014 21.0131C9.56438 21.0131 9.21513 21.0007 8.056 20.9485C6.9835 20.899 6.40188 20.7203 6.01412 20.569C5.53631 20.3929 5.10405 20.1119 4.74913 19.7467C4.38303 19.392 4.10112 18.9598 3.92412 18.4818C3.77425 18.0954 3.59413 17.5124 3.546 16.4399C3.49375 15.2808 3.48275 14.9329 3.48275 11.9945C3.48275 9.0575 3.49375 8.711 3.546 7.55187C3.5955 6.47937 3.77425 5.89638 3.9255 5.50863C4.12488 4.99575 4.36412 4.62862 4.74913 4.24362C5.13412 3.85862 5.49988 3.62075 6.01412 3.42138C6.40188 3.27013 6.9835 3.09138 8.056 3.04188C9.07075 2.99513 9.464 2.98138 11.5141 2.98V2.98275ZM18.3726 4.80875C18.1993 4.80875 18.0276 4.84289 17.8675 4.90923C17.7073 4.97557 17.5618 5.0728 17.4392 5.19537C17.3167 5.31794 17.2194 5.46346 17.1531 5.62361C17.0868 5.78376 17.0526 5.95541 17.0526 6.12875C17.0526 6.30209 17.0868 6.47374 17.1531 6.63389C17.2194 6.79404 17.3167 6.93956 17.4392 7.06213C17.5618 7.1847 17.7073 7.28193 17.8675 7.34827C18.0276 7.41461 18.1993 7.44875 18.3726 7.44875C18.7227 7.44875 19.0585 7.30968 19.306 7.06213C19.5536 6.81458 19.6926 6.47884 19.6926 6.12875C19.6926 5.77866 19.5536 5.44292 19.306 5.19537C19.0585 4.94782 18.7227 4.80875 18.3726 4.80875ZM12.5014 6.3515C11.7521 6.33981 11.008 6.47729 10.3123 6.75594C9.61671 7.0346 8.98346 7.44885 8.44946 7.97458C7.91546 8.50032 7.49138 9.12703 7.20191 9.81823C6.91244 10.5094 6.76336 11.2513 6.76336 12.0007C6.76336 12.7501 6.91244 13.4919 7.20191 14.1831C7.49138 14.8743 7.91546 15.5011 8.44946 16.0268C8.98346 16.5525 9.61671 16.9668 10.3123 17.2454C11.008 17.5241 11.7521 17.6616 12.5014 17.6499C13.9844 17.6267 15.3988 17.0214 16.4393 15.9645C17.4799 14.9076 18.0631 13.4839 18.0631 12.0007C18.0631 10.5175 17.4799 9.09382 16.4393 8.03691C15.3988 6.97999 13.9844 6.37464 12.5014 6.3515ZM12.5014 8.33288C13.474 8.33288 14.4067 8.71923 15.0944 9.40695C15.7821 10.0947 16.1685 11.0274 16.1685 12C16.1685 12.9726 15.7821 13.9053 15.0944 14.593C14.4067 15.2808 13.474 15.6671 12.5014 15.6671C11.5288 15.6671 10.596 15.2808 9.90833 14.593C9.22061 13.9053 8.83425 12.9726 8.83425 12C8.83425 11.0274 9.22061 10.0947 9.90833 9.40695C10.596 8.71923 11.5288 8.33288 12.5014 8.33288Z"
+                                 fill="white" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li class="footer__content-bottom-item">
+                        <a href="" class="footer__content-bottom-link">
+                           <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M8.41075 19C16.713 19 21.2546 12.0731 21.2546 6.07669C21.2546 5.88285 21.2546 5.68625 21.2464 5.49241C22.1306 4.84789 22.8937 4.04993 23.5 3.13592C22.6741 3.50262 21.7988 3.7443 20.9026 3.85312C21.8466 3.28495 22.5536 2.391 22.8923 1.3374C22.0054 1.86647 21.0346 2.23787 20.0226 2.43534C19.3423 1.70572 18.4419 1.22237 17.4611 1.06016C16.4803 0.897946 15.4737 1.06592 14.5973 1.53807C13.7209 2.01023 13.0236 2.7602 12.6134 3.67182C12.2031 4.58345 12.1029 5.60585 12.3281 6.58066C10.5334 6.49005 8.77762 6.02057 7.17468 5.20269C5.57175 4.3848 4.15744 3.23678 3.0235 1.83307C2.44784 2.83421 2.27216 4.01843 2.53214 5.14526C2.79211 6.27209 3.46825 7.25705 4.42325 7.90013C3.70762 7.87565 3.00772 7.68215 2.38 7.33524V7.39754C2.38123 8.44631 2.74205 9.46247 3.40145 10.2743C4.06086 11.0861 4.9784 11.6438 5.999 11.853C5.61161 11.9605 5.21144 12.014 4.80963 12.0122C4.52635 12.0131 4.24365 11.9867 3.96537 11.9333C4.25383 12.8361 4.8155 13.6254 5.57171 14.1908C6.32793 14.7561 7.24081 15.0691 8.1825 15.0859C6.58276 16.3511 4.60668 17.0373 2.5725 17.034C2.21407 17.0355 1.85588 17.0147 1.5 16.9716C3.56458 18.297 5.96228 19.0008 8.41075 19Z"
+                                 fill="white" />
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-lg-4 footer__content-bottom-column">
+                  <p class="footer__content-copyright">
+                     @2022. Все права защищены
+                  </p>
+               </div>
+               <div class="col-lg-3 footer__content-bottom-column">
+                  <a href="" class="footer__developer-link">
+                     <img src="img/footer/developer-logo.png" alt="" class="developer__logo">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </footer>
+
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/jquery-migrate-3.4.0.min.js"></script>
+   <script src="js/jquery.bxslider.js"></script>
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
