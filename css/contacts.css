@@ -1,0 +1,262 @@
+/* HEADER */
+.contacts-header__bottom {
+   box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.33);
+}
+
+/* CONTACTS-HEAD */
+
+.contacts-head {
+   padding-top: 182px;
+   padding-bottom: 96px;
+}
+
+.contacts-head::after {
+   content: '';
+   position: absolute;
+   display: block;
+   top: 69%;
+   width: 23%;
+   height: 2px;
+   background-color: var(--text);
+}
+
+/* CONTACTS-QUESTIONS */
+
+.contacts-questions {
+   height: 276px;
+   background-image: url(../img/contacts/contacts-hero-bg.png);
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.contacts-questions__container {
+   height: 100%;
+}
+
+.contacts-questions__content {
+   height: 100%;
+   align-items: center;
+}
+
+.contacts-questions__title {
+   margin-bottom: 20px;
+}
+
+.contacts-questions__descr {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+}
+
+/* CONTACTS-ADDRESS */
+.contacts-address__container {
+   padding: 100px 0px 0px 0px;
+   margin-bottom: 154px;
+   height: 670px;
+
+}
+
+.contacts-address__content {
+   height: 655px;
+   background-image: url(../img/contacts/contacts-address-bg.png);
+   background-repeat: no-repeat;
+   background-position: 100% 50%;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.contacts-address__column {
+   display: flex;
+   padding: 63px;
+}
+
+.contacts-address__list {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding-bottom: 20px;
+}
+
+.contacts-address__item {
+   display: flex;
+}
+
+.contacts-address__icon {
+   margin-right: 16px;
+}
+
+.contacts-address__title {
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 28px;
+   margin-bottom: 15px;
+}
+
+.contacts-address__descr {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   color: #57585F;
+}
+
+/* CONTACTS-MAP */
+.contacts-map {
+   background-color: rgba(0, 35, 57, 0.04);
+}
+
+.contacts-map__container {
+   padding-top: 61px;
+   padding-bottom: 100px;
+}
+
+
+.contacts-map__title {
+   margin-bottom: 65px;
+}
+
+.contacts-map__block {
+   height: 428px;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+
+/* MEDIA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+   /* CONTACTS-ADDRESS */
+   .contacts-address__container {
+      padding: 20px 0px 0px 0px;
+      margin-bottom: 70px;
+   }
+
+   .contacts-address__content {
+      background-size: 60%;
+
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+   /* CONTACTS-QUESTIONS */
+   .contacts-questions {
+      background-position: 70% 50%;
+   }
+
+   .contacts-address__content {
+      background-size: 60%;
+
+   }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+   /* CONTACTS-HEAD */
+   .contacts-head {
+      padding-top: 61px;
+      padding-bottom: 20px;
+   }
+
+   /* CONTACTS-QUESTIONS */
+   .contacts-questions {
+      background-position: 60% 50%;
+   }
+
+   /* CONTACTS-ADDRESS */
+   .contacts-address__container {
+      padding-top: 20px;
+      margin-bottom: 70px;
+      height: 555px;
+   }
+
+   .contacts-address__content {
+      height: 550px;
+      background-size: 50%;
+   }
+
+   .contacts-address__title {
+      font-size: 20px;
+      line-height: 20px;
+   }
+
+   .contacts-address__descr {
+      font-size: 18px;
+      line-height: 26px;
+   }
+
+   /* CONTACTS-MAP */
+   .contacts-map__block {
+      position: relative;
+      height: 300px;
+   }
+
+   .contacts-map__plug {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150%;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+   /* CONTACTS-HEAD */
+   .contacts-head {
+      padding-top: 110px;
+      padding-bottom: 20px;
+   }
+
+   /* CONTACTS-QUESTIONS */
+   .contacts-questions {
+      background-position: 70% 50%;
+   }
+
+   /* CONTACTS-ADDRESS */
+   .contacts-address__container {
+      padding-top: 20px;
+      margin-bottom: 70px;
+      height: 400px;
+   }
+
+   .contacts-address__content {
+      background-size: 0%;
+      height: 400px;
+   }
+
+   .contacts-address__column {
+      padding: 10px;
+   }
+
+
+   .contacts-address__title {
+      font-size: 20px;
+      line-height: 20px;
+   }
+
+   .contacts-address__descr {
+      font-size: 18px;
+      line-height: 26px;
+   }
+
+   /* CONTACTS-MAP */
+   .contacts-map__container {
+      padding-top: 35px;
+      padding-bottom: 43px;
+   }
+
+   .contacts-map__block {
+      position: relative;
+      height: 200px;
+   }
+
+   .contacts-map__title {
+      margin-bottom: 10px;
+   }
+
+   .contacts-map__plug {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 180%;
+   }
+}

@@ -1364,6 +1364,7 @@ body {
    .feedback__form-input {
       width: 240px;
       height: 40px;
+      margin-right: 10px;
       padding: 16px 10px 16px 28px;
       font-size: 16px;
       line-height: 26px;
@@ -1547,8 +1548,6 @@ body {
    .header__bottom {
       height: 70px;
    }
-
-
 
    /* HERO */
    .hero {
